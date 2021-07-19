@@ -22,13 +22,14 @@
         <!-- Theme styles -->
         <link href="./css/dot-icons.css" rel="stylesheet" type="text/css">
         <link href="./css/theme.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="./css/style_TAG.css">
     </head>
     <body class="body">
         <header>
             <ul>
               <li><a href="#" class="active">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Work</a></li>
+              <li><a href="">HASHTAG</a></li>
+              <li><a href="#">MOVIE LIST</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
         </header>
@@ -36,14 +37,14 @@
             <img src="stars.png" id="stars">
             <img src="moon.png" id="moon">
             <img src="mountains_behind.png" id="mountains_behind">
-            <h2 id="text">Moon Light</h2>
-            <a href="#sec" id="btn">Explore</a>
             <img src="mountains_front.png" id="mountains_front">
             <div class="content">
         </section>
         <section class="section-text-white position-relative">
             <div class="d-background"></div>
             <div class="d-background bg-theme-blacked"></div>
+            <a href="#" class="hashbtn"><span></span>#반전</a>
+            <a href="#" class="hashbtn"><span></span>#귀신</a>
             <div class="mt-auto container position-relative">
                 <div class="top-block-head text-uppercase">
                     <h2 class="display-4">Movie List
@@ -1185,7 +1186,6 @@
                 </div>
             </div>
         </section>
-        <a class="scroll-top disabled" href="#"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
         <footer class="section-text-white footer footer-links bg-darken">
             <div class="footer-body container">
                 <div class="row">
@@ -1318,8 +1318,8 @@
             let stars = document.getElementById('stars');
             let mountains_behind = document.getElementById('mountains_behind');
             let mountains_front = document.getElementById('mountains_front');
-            let text = document.getElementById('text');
-            let btn = document.getElementById('btn');
+            let text = document.getElementById('text1');
+            let btn = document.getElementById('btn1');
             let header = document.querySelector('header');
             window.addEventListener('scroll', function() {
               var value = window.scrollY;
@@ -1332,6 +1332,21 @@
               btn.style.marginTop = value * 1.5 + 'px';
               text.style.marginRight = value * 4 + 'px';
             });
-          </script>
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.hashbtn').on('mouseenter', function(e){
+                    x = e.pageX - $(this).offset().left,
+                    y = e.pageY - $(this).offset().top;
+                    $(this).find('span').css({top:y, left:x})
+                })
+                $('.hashbtn').on('mouseout', function(e){
+                    x = e.pageX - $(this).offset().left,
+                    y = e.pageY - $(this).offset().top;
+                    $(this).find('span').css({top:y, left:x})
+                })
+            })
+        </script>
     </body>
 </html>
