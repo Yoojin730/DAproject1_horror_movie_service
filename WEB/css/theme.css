@@ -587,12 +587,12 @@ a:hover {
   background: #ff8a00;
 }
 .bg-theme-blacked {
-  background: rgba(255,138,0,0.7);
-  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.85), rgba(0,0,0,0.85)) !important;
+  background: linear-gradient(#2b1055,#7597de);
+  /*background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.85), rgba(0,0,0,0.85)) !important;
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0.85), rgba(0,0,0,0.85)) !important;
   background-image: -o-linear-gradient(top, rgba(0,0,0,0.85), rgba(0,0,0,0.85)) !important;
   background-image: -ms-linear-gradient(top, rgba(0,0,0,0.85), rgba(0,0,0,0.85)) !important;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0,0.85)) !important;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0,0.85)) !important;*/
 }
 .bg-theme-lighted {
   background: rgba(255,138,0,0.7);
