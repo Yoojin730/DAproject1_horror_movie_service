@@ -210,6 +210,7 @@ h6,
 p,
 ul {
   margin-bottom: 0;
+  color : #ccc ; 
 }
 .display-1,
 .display-2,
@@ -225,6 +226,7 @@ strong,
 /* Text overflow */
 .lead {
   font-size: 1rem;
+  color :rgb(255, 255, 255)
 }
 .text-short-2 {
   display: block;
@@ -266,13 +268,7 @@ strong,
 .list-wider .list-inline-item:not(:last-child) {
   margin-right: 2rem;
 }
-.list-categories {
-  font-family: 'Oswald';
-  font-weight: 500;
-  line-height: 1.2;
-  color: #333;
-  font-size: 1rem;
-}
+
 /* Link styles */
 a {
   color: #ff8a00;
@@ -668,6 +664,7 @@ a:hover {
 }
 .section-head,
 .section-simple-head {
+  color : white ; 
   margin-bottom: 3rem;
   display: -webkit-box;
   display: -moz-box;
@@ -691,6 +688,7 @@ a:hover {
   max-width: 720px;
 }
 .section-head {
+  color : white ; 
   background-image: url("../images/svg/tape-pattern.svg");
   -webkit-background-size: 1.5rem auto;
   -moz-background-size: 1.5rem auto;
@@ -699,6 +697,7 @@ a:hover {
   padding-left: 2.5rem;
 }
 .section-title {
+  color : white ; 
   font-family: 'Oswald';
   line-height: 1.2;
   font-weight: 500;
@@ -706,6 +705,7 @@ a:hover {
   color: #333;
 }
 .section-main-text {
+  color : white ; 
   font-family: 'Oswald';
   line-height: 1.2;
   font-weight: 300;
@@ -715,7 +715,7 @@ a:hover {
 }
 .section-text {
   margin-top: 0.5rem;
-  color: #999;
+  color : white ;
   font-weight: 400;
   font-size: 1rem;
 }
@@ -723,7 +723,7 @@ a:hover {
   color: #fff !important;
 }
 .section-text-white .section-title {
-  color: inherit;
+  color: white;
 }
 .section-text-white .section-text {
   color: #eee;
@@ -759,6 +759,7 @@ a:hover {
 .section-sidebar .section-title,
 .section-line .section-title {
   font-size: 1.5rem;
+  color : white ; 
 }
 .section-sidebar .section-bottom,
 .section-line .section-bottom {
@@ -791,7 +792,7 @@ a:hover {
 .form-title {
   font-family: 'Oswald';
   font-weight: 500;
-  color: #333;
+  color: white ;
   line-height: 1.2;
   font-size: 2.25rem;
 }
@@ -822,7 +823,7 @@ label {
   padding: 0.5rem 0.75rem;
   line-height: 1.5rem;
   height: calc(2.5rem + 2px);
-  color: #666;
+  color: rgb(255, 255, 255);
 }
 .form-control::-webkit-input-placeholder {
   color: inherit;
@@ -952,6 +953,7 @@ textarea.form-control {
   display: none;
 }
 .rating-line {
+  color : white;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -1369,7 +1371,7 @@ textarea.form-control {
   line-height: 1.2em;
   height: 1.2em;
   font-size: 0.8333em;
-  color: #333;
+  color: rgb(255, 255, 255);
 }
 .logo-tape {
   position: absolute;
@@ -2036,7 +2038,7 @@ a.paginator-item:hover {
 .entity-title {
   font-family: 'Oswald';
   font-weight: 500;
-  color: #333;
+  color: rgb(255, 255, 255);
   line-height: 1.2;
 }
 .entity-subtitle {
@@ -2055,7 +2057,7 @@ a.paginator-item:hover {
   font-family: 'Oswald';
   margin-top: 0.75rem;
   font-size: 0.875rem;
-  color: #333;
+  color: rgb(255, 255, 255);
   font-weight: 500;
   line-height: 1.2;
 }
@@ -2066,16 +2068,17 @@ a.paginator-item:hover {
 }
 .entity-text {
   margin-top: 1rem;
+  color : #ccc ; 
 }
 .entity-subtext {
   margin-top: 0.625rem;
   line-height: 1.2;
-  color: #999;
+  color: rgb(255, 255, 255);
 }
 .entity-extra {
   font-family: 'Oswald';
   line-height: 1.2;
-  color: #999;
+  color: rgb(255, 255, 255);
 }
 .entity-extra .entity-actions {
   margin: 0 auto;
@@ -2113,7 +2116,7 @@ a.paginator-item:hover {
   margin: 1rem 0 0;
   padding: 0;
   list-style: none;
-  color: #999;
+  color: rgb(255, 255, 255);
 }
 .entity-list li {
   margin: 0;
@@ -2124,7 +2127,7 @@ a.paginator-item:hover {
 }
 .entity-list-title {
   font-weight: 600;
-  color: #333;
+  color: #ff8a00;
   float: left;
   margin-right: 0.5rem;
 }
@@ -2152,6 +2155,8 @@ a.paginator-item:hover {
 .section-description .display-4 {
   margin-bottom: 0.5rem;
   font-weight: 600;
+  color : white ;
+  
 }
 .entity-share-link {
   margin-right: 0.5rem;

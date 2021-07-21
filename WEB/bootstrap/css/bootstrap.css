@@ -4,6 +4,12 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+ .body
+ {
+   background: linear-gradient(#2b1055,#7597de);
+ }
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
