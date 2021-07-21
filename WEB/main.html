@@ -42,11 +42,19 @@
         </section>
         <div class="my-filters" id="hashtag">
             <button data-filter-type="all" type="button" class="filter-button hashbtn highlight" id="hashbtn" onclick="colorchange()"><span></span>#All</button>
-            <button data-filter-type="fruit" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#Horror</button>
-            <button data-filter-type="vegetables" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#Thriller</button>
-            <button data-filter-type="protein" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#</button>
-            <button data-filter-type="protein" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#</button>
-            <button data-filter-type="protein" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#</button>
+            <button data-filter-type="fruit" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#여름</button>
+            <button data-filter-type="vegetables" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#스릴러</button>
+            <button data-filter-type="protein" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#반전</button>
+            <button data-filter-type="protein" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#잔인</button>
+            <button data-filter-type="protein" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#귀신</button><br>
+
+            <button data-filter-type="all" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#한국</button>
+            <button data-filter-type="fruit" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#외국</button>
+            <button data-filter-type="all" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#악마</button>
+            <button data-filter-type="fruit" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#좀비</button>
+            <button data-filter-type="all" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#고어</button>
+            <button data-filter-type="fruit" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#오컬트</button>
+            <div id='dis'>
             <div class="my-filter-list">
                 <div class="filterable" data-filters='[ { "type":"fruit", "sortPriority":"3" }, { "type":"vegetables", "sortPriority":"3" } ]'>
                   <a href="./47m.html"><img src="./images/movie_image/47m.jpg" alt></a>
@@ -143,11 +151,13 @@
                 </div>
             </div>
         </div>
+        </div>
+
         <footer class="section-text-white footer footer-links bg-darken">
             <div class="footer-body container">
                 <div class="row">
                     <div class="col-sm-6 col-lg-3">
-                        <a class="footer-logo" href="./">
+                        <a class="footer-logo" href="./main.html">
                             <span class="logo-element">
                                 <span class="logo-tape">
                                     <span class="svg-content svg-fill-theme" data-svg="./images/svg/logo-part.svg"></span>
@@ -314,5 +324,6 @@
             }
           </script>
           <script src="./js/filter.js"></script>
+          <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     </body>
 </html>
