@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>Horror Movie Keyword</title>
+        <title>Horror Movie</title>
         <link  href="./css/style.css" rel="stylesheet" type="text/css">
         <!-- Bootstrap -->
         <link href="./bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
@@ -28,8 +28,8 @@
         <header>
             <ul>
               <li><a href="#" class="active">Home</a></li>
-              <li><a href="">HASHTAG</a></li>
-              <li><a href="#">MOVIE LIST</a></li>
+              <li><a href="#hashtag">HASHTAG</a></li>
+              <li><a href="movie_list.html">MOVIE LIST</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
         </header>
@@ -40,1152 +40,109 @@
             <img src="mountains_front.png" id="mountains_front">
             <div class="content">
         </section>
-        <section class="section-text-white position-relative">
-            <div class="d-background"></div>
-            <div class="d-background bg-theme-blacked"></div>
-            <a href="#" class="hashbtn"><span></span>#반전</a>
-            <a href="#" class="hashbtn"><span></span>#귀신</a>
-            <div class="mt-auto container position-relative">
-                <div class="top-block-head text-uppercase">
-                    <h2 class="display-4">Movie List
-                        <!--<span class="text-theme">List</span>-->
-                    </h2>
+        <div class="my-filters" id="hashtag">
+            <button data-filter-type="all" type="button" class="filter-button hashbtn highlight" id="hashbtn" onclick="colorchange()"><span></span>#All</button>
+            <button data-filter-type="fruit" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#Horror</button>
+            <button data-filter-type="vegetables" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#Thriller</button>
+            <button data-filter-type="protein" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#</button>
+            <button data-filter-type="protein" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#</button>
+            <button data-filter-type="protein" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#</button>
+            <div class="my-filter-list">
+                <div class="filterable" data-filters='[ { "type":"fruit", "sortPriority":"3" }, { "type":"vegetables", "sortPriority":"3" } ]'>
+                  <a href="./hashtag_html/47m.html.html"><img src="./images/movie_image/47m.jpg" alt></a>
                 </div>
-                <div class="top-block-footer">
-                    <div class="slick-spaced slick-carousel" data-slick-view="navigation responsive-4">
-                        <div class="slick-slides">
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/47m.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=iVpCsTBH5WY" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">47m</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">horror</a>,
-                                            <a class="content-link" href="movies-blocks.html">thriller</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">7.32</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">89</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/검은사제들.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=Jd-EXmSxV2A" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">검은사제들</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">mystery</a>,
-                                            <a class="content-link" href="movies-blocks.html">drama</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">8.55</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">108</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/겟아웃.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=5-H7DpEBZGo" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">겟 아웃</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">mystery</a>,
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">8.45</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">104</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/곡성.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=Ej25zrnaTXk" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">곡성</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">mystery</a>,
-                                            <a class="content-link" href="movies-blocks.html">thriller</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">8.22</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">156</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/곤지암.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=CfYolB0hoa0" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">곤지암</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">horror</a>,
-                                            <a class="content-link" href="movies-blocks.html">mystery</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">7.51</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">94</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/그것.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=biPh95JF3no" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">그것</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">horror</a>,
-                                            <a class="content-link" href="movies-blocks.html">drama</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">7.66</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">135</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/기담.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=Mu8lneSoBSE" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">기담</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">7.49</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">98</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/더넌.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=jz49pz3kIF4" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">더넌</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">horror</a>,
-                                            <a class="content-link" href="movies-blocks.html">mystery</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">7.37</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">96</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/라이트아웃.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=AIhtFqoirCQ" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">라이트 아웃</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">7.71</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">81</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/미드소마.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=Jape3l9HyYg" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">미드소마</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">thriller</a>,
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">7.68</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">147</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/변신.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=vfvdLx1l2Yk" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">변신</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">thriller</a>,
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">7.89</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">113</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/사바하.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=hx2wUzYh5EE" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">사바하</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">thriller</a>,
-                                            <a class="content-link" href="movies-blocks.html">mystery</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">7.42</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">122</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/사일런트힐.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=dsuiYz8c_ys" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">사일런트힐</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">thriller</a>,
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">7.71</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">124</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/새벽의저주.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://movie.naver.com/movie/bi/mi/mediaView.naver?code=38364&mid=2539" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">새벽의저주</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">thriller</a>,
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">8.41</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">100</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/샴.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://movie.naver.com/movie/bi/mi/mediaView.naver?code=66189&mid=7241" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">샴</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">thriller</a>,
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">6.66</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">93</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/셔터.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://movie.naver.com/movie/bi/mi/mediaView.naver?code=40140&mid=4017" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">셔터</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">fantasy</a>,
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">7.52</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">96</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/쏘우.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://movie.naver.com/movie/bi/mi/mediaView.naver?code=39614&mid=3698" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">쏘우</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">criminal</a>,
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">8.15</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">100</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/애나벨.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=kME_c5MNYok" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">애나벨</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">7.10</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">99</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/어스.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=cIykYmz7K1Q" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">어스</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">thriller</a>,
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">7.70</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">116</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/오큘러스.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=RFBtKMyVx_A" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">오큘러스</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">mystery</a>,
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">6.61</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">105</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/오펀.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=2DWIexD6qgA" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">오펀</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">mystery</a>,
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">8.39</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">123</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/유전.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=w3id0NA161o" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">유전</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">mystery</a>,
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">7.90</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">127</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/이스케이프룸.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=kTRoJmIRrcQ" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">이스케이프룸</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">action</a>,
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">7.95</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">100</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/인비저블맨.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=x7bcMsEu96w" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">인비저블맨</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">thriller</a>,
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">8.83</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">124</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/인시디어스.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=EpDk0nDtkRU" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">인시디어스</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">thriller</a>,
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">7.60</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">102</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/장화홍련.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=OSvLKSgbxtA" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">장화홍련</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">thriller</a>,
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">8.77</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">118</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/제인도.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=xqngSOgLquk" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">제인도</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">8.35</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">86</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/컨저링.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=dji5vHuoVtM" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">컨저링</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">thriller</a>,
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">7.86</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">112</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/콰이어트플레이스2.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=rf7SFaFSf5c" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">콰이어트플레이스2</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">thriller</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">8.78</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">97</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/파라노말.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=7TC9bKyDB5Y" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">파라노말액티비티</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">mystery</a>,
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">7.46</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">85</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="slick-slide">
-                                <article class="poster-entity" data-role="hover-wrap">
-                                    <div class="embed-responsive embed-responsive-poster">
-                                        <img class="embed-responsive-item" src="./images/movie_image/해피데스데이.jpg" alt="" />
-                                    </div>
-                                    <div class="d-background bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show"></div>
-                                    <div class="d-over bg-highlight-bottom">
-                                        <div class="collapse animated faster entity-play" data-show-class="fadeIn show" data-hide-class="fadeOut show">
-                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=MdzIICVcJXo" data-magnific-popup="iframe">
-                                                <span class="icon-content"><i class="fas fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                        <h4 class="entity-title">
-                                            <a class="content-link" href="movie-info-sidebar-right.html">해피데스데이</a>
-                                        </h4>
-                                        <div class="entity-category">
-                                            <a class="content-link" href="movies-blocks.html">mystery</a>,
-                                            <a class="content-link" href="movies-blocks.html">horror</a>
-                                        </div>
-                                        <div class="entity-info">
-                                            <div class="info-lines">
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
-                                                    <span class="info-text">8.31</span>
-                                                    <span class="info-rest">/10</span>
-                                                </div>
-                                                <div class="info info-short">
-                                                    <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
-                                                    <span class="info-text">96</span>
-                                                    <span class="info-rest">&nbsp;min</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                        <div class="slick-arrows">
-                            <div class="slick-arrow-prev">
-                                <span class="th-dots th-arrow-left th-dots-animated">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </span>
-                            </div>
-                            <div class="slick-arrow-next">
-                                <span class="th-dots th-arrow-right th-dots-animated">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="filterable" data-filters='[ { "type":"fruit", "sortPriority":"1" } ]'>
+                  <img src="./images/movie_image/검은사제들.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"fruit", "sortPriority":"1" } ]'>
+                  <img src="./images/movie_image/겟아웃.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"fruit"} ]'>
+                  <img src="./images/movie_image/곡성.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"vegetables" } ]'>
+                  <img src="./images/movie_image/곤지암.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"vegetables" } ]'>
+                  <img src="./images/movie_image/그것.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"vegetables", "sortPriority":"1" }, { "type":"fruit", "sortPriority":"2" } ]'>
+                  <img src="./images/movie_image/기담.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"1" } ]'>
+                  <img src="./images/movie_image/더넌.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"3" } ]'>
+                  <img src="./images/movie_image/라이트아웃.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"2" } ]'>
+                  <img src="./images/movie_image/미드소마.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"2" } ]'>
+                  <img src="./images/movie_image/변신.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"2" } ]'>
+                  <img src="./images/movie_image/사바하.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"fruit", "sortPriority":"3" }, { "type":"vegetables", "sortPriority":"3" } ]'>
+                  <img src="./images/movie_image/사일런트힐.jpg" alt>
+                </div>
+                <div class="filterable" data-filters='[ { "type":"fruit", "sortPriority":"1" } ]'>
+                  <img src="./images/movie_image/새벽의저주.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"fruit"} ]'>
+                  <img src="./images/movie_image/샴.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"vegetables" } ]'>
+                  <img src="./images/movie_image/셔터.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"vegetables" } ]'>
+                  <img src="./images/movie_image/쏘우.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"vegetables", "sortPriority":"1" }, { "type":"fruit", "sortPriority":"2" } ]'>
+                  <img src="./images/movie_image/애나벨.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"1" } ]'>
+                  <img src="./images/movie_image/어스.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"3" } ]'>
+                  <img src="./images/movie_image/오큘러스.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"2" } ]'>
+                  <img src="./images/movie_image/오펀.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"2" } ]'>
+                  <img src="./images/movie_image/유전.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"2" } ]'>
+                  <img src="./images/movie_image/이스케이프룸.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"fruit", "sortPriority":"3" }, { "type":"vegetables", "sortPriority":"3" } ]'>
+                  <img src="./images/movie_image/인비저블맨.jpg" alt>
+                </div>
+                <div class="filterable" data-filters='[ { "type":"fruit", "sortPriority":"1" } ]'>
+                  <img src="./images/movie_image/인시디어스.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"fruit"} ]'>
+                  <img src="./images/movie_image/장화홍련.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"vegetables" } ]'>
+                  <img src="./images/movie_image/제인도.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"vegetables" } ]'>
+                  <img src="./images/movie_image/컨저링.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"vegetables", "sortPriority":"1" }, { "type":"fruit", "sortPriority":"2" } ]'>
+                  <img src="./images/movie_image/콰이어트플레이스2.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"1" } ]'>
+                  <img src="./images/movie_image/파라노말.jpg" alt="">
+                </div>
+                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"3" } ]'>
+                  <img src="./images/movie_image/해피데스데이.jpg" alt="">
                 </div>
             </div>
-        </section>
+        </div>
         <footer class="section-text-white footer footer-links bg-darken">
             <div class="footer-body container">
                 <div class="row">
@@ -1328,9 +285,6 @@
               mountains_behind.style.top =-value * -0.5 + 'px';
               header.style.top =-value * -0.5 + 'px';
               mountains_front.style.top =-value * 0 + 'px';
-              text.style.marginTop = value * 1.5 + 'px';
-              btn.style.marginTop = value * 1.5 + 'px';
-              text.style.marginRight = value * 4 + 'px';
             });
         </script>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -1348,5 +302,17 @@
                 })
             })
         </script>
+        <script>
+            // When the document is ready, bind the filter buttons
+            document.onreadystatechange = function() {
+              if (document.readyState === 'interactive') {
+                window._gauze.bindFilterButtons({
+                  triggerSelector: '.my-filters .filter-button',
+                  filterContainerSelector: '.my-filter-list'
+                })
+              }
+            }
+          </script>
+          <script src="./js/filter.js"></script>
     </body>
 </html>
