@@ -22,9 +22,32 @@
         <link href="./css/dot-icons.css" rel="stylesheet" type="text/css">
         <link href="./css/theme.css" rel="stylesheet" type="text/css">
     </head>
+
     <body class="body">
+        <header class="header header-horizontal header-view-pannel">
+            <div class="container">
+                <nav class="navbar">
+                    <a class="navbar-brand" href="./">
+                        <span class="logo-element">
+                            <span class="logo-tape">
+                                <span class="svg-content svg-fill-theme" data-svg="./images/svg/logo-part.svg"></span>
+                            </span>
+                            <span class="logo-text text-uppercase">
+                                <span>DA</span>YBIGTA</span>
+                        </span>
+                    </a>
+                    
+                    
+                        <div class="navbar-extra">
+                            <a class="btn-theme btn" href="http://www.cgv.co.kr/ticket/"><i class="fas fa-ticket-alt"></i>&nbsp;&nbsp;Buy Ticket</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
         <section class="after-head d-flex section-text-white position-relative">
-            <div class="d-background" data-parallax="scroll"></div>
+            <div class="d-background" data-image-src="https://img.wallpapersafari.com/desktop/1920/1080/20/82/VGlaFy.jpg" data-parallax="scroll"></div>
             <div class="d-background bg-black-80"></div>
             <div class="top-block top-inner container">
                 <div class="top-block-content">
@@ -37,6 +60,7 @@
                 </div>
             </div>
         </section>
+
         <section class="section-text-white position-relative">
             <div class="d-background"></div>
             <div class="d-background bg-theme-blacked"></div>
@@ -1179,14 +1203,15 @@
                     </div>
                 </div>
             </div>
-        </section>            
+        </section>    
+                
         <a class="scroll-top disabled" href="#"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
         <!-- jQuery library -->
         <script src="./js/jquery-3.3.1.js"></script>
         <!-- Bootstrap -->
         <script src="./bootstrap/js/bootstrap.js"></script>
         <!-- Paralax.js -->
-        <!--<script src="./parallax.js/parallax.js"></script>-->
+        <script src="./parallax.js/parallax.js"></script>
         <!-- Waypoints -->
         <script src="./waypoints/jquery.waypoints.min.js"></script>
         <!-- Slick carousel -->
@@ -1195,6 +1220,7 @@
         <script src="./magnific-popup/jquery.magnific-popup.min.js"></script>
         <!-- Inits product scripts -->
         <script src="./js/script.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ4Qy67ZAILavdLyYV2ZwlShd0VAqzRXA&callback=initMap"></script>
         <script async defer src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js"></script>
     </body>
 </html>
