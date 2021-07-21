@@ -51,7 +51,7 @@ header ul li a
   padding: 6px 15px;
   color: #fff;
   border-radius: 20px;
-  font-size: 20px;
+  font-size: 25px;
 }
 header ul li a.active,
 header ul li a:hover
@@ -59,7 +59,7 @@ header ul li a:hover
   background: #fff;
   color: #2b1055;
 }
-section:before
+/*section:before
 {
   content: '';
   position: absolute;
@@ -68,7 +68,7 @@ section:before
   height: 100px;
   background: linear-gradient(to top,#1c0522,transparent);
   z-index: 1000;
-}
+}*/
 section img
 {
   position: absolute;
@@ -87,7 +87,7 @@ section img#mountains_front
 {
   z-index: 10;
 }
-h2#text
+h2#text1
 {
   position: absolute;
   color: #fff;
@@ -96,8 +96,26 @@ h2#text
   font-size: 7.5vw;
   transform: translateY(0px);
 }
-#btn
+
+/*#hashtag {
+  position:absolute;
+  top:40%;
+  left:46%;
+  text-decoration: none;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background: #fff;
+  color: #2b1055;
+  transform: translateY(100px);
+  font-size: 1.2em;
+  z-index: 9;
+}
+*/
+#btn1
 {
+  position:absolute;
+  top:50%;
+  left:47%;
   text-decoration: none;
   padding: 8px 30px;
   border-radius: 40px;
@@ -105,23 +123,6 @@ h2#text
   color: #2b1055;
   transform: translateY(100px);
   font-size: 1.5em;
-  z-index: 9;
+  z-index:9;
 }
-.sec
-{
-  position: relative;
-  min-height: 500px;
-  padding: 100px;
-  background: #1c0522;
-}
-.sec h2
-{
-  font-size: 3.5em;
-  margin-bottom: 10px;
-  color: #fff;
-}
-.sec p
-{
-  font-size: 1.2em;
-  color: #fff;
-}
+
