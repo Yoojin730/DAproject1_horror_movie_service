@@ -25,6 +25,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
 
   <!-- =======================================================
   * Template Name: Baker - v4.3.0
@@ -36,34 +37,30 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-transparent">
-    <div class="container d-flex align-items-center justify-content-between">
+  <header>
+    <a href="#" class="logo"></a>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#main">Hashtag</a></li>
+      <li><a href="movie_list.html">MovieList</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
 
-      <h1 class="logo"><a href="index.html"></a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="">Home</a></li>          
-          <li><a class="nav-link scrollto" href="#main">Hashtag</a></li>
-          <li><a class="nav-link scrollto" href="movie_list.html">Movie List</a></li>
-          <li><a class="nav-link scrollto" href=>About</a></li>
-        </ul>
-      </nav><!-- .navbar -->
+  
 
-    </div>
-  </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center justify-content-center">
-    <div class="container position-relative">
-      <h1>Welcome to Baker</h1>
-      <h2>We are team of talented designers making websites with Bootstrap</h2>
-      <a href="#about" class="btn-get-started scrollto">Get Started</a>
-    </div>
-  </section><!-- End Hero -->
+
+  <section id="sky" class="sky">
+    <img src="stars.png" id="stars">
+    <img src="moon.png" id="moon">
+    <img src="mountains_behind.png" id="mountains_behind">
+    <h2 id="text"></h2>
+    <a href="#sec" id="btn"></a>
+    <img src="mountains_front.png" id="mountains_front">
+    <div class="content">
+  </section>
 
 
 
@@ -357,7 +354,26 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  
+  <script type="text/javascript">
+    let moon = document.getElementById('moon');
+    let stars = document.getElementById('stars');
+    let mountains_behind = document.getElementById('mountains_behind');
+    let mountains_front = document.getElementById('mountains_front');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let header = document.querySelector('header');
+    window.addEventListener('scroll', function() {
+      var value = window.scrollY;
+      moon.style.top = -value * -1.05 + 'px';
+      stars.style.left = value * 0.25 + 'px';
+      mountains_behind.style.top =-value * -0.5 + 'px';
+      header.style.top =-value * -0.5 + 'px';
+      mountains_front.style.top =-value * 0 + 'px';
+      text.style.marginTop = value * 1.5 + 'px';
+      btn.style.marginTop = value * 1.5 + 'px';
+      text.style.marginRight = value * 4 + 'px';
+    });
+  </script>
 
   
 
