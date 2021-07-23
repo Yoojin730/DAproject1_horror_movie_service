@@ -2035,12 +2035,13 @@ a.paginator-item:hover {
 /*------------------------------------------------------------------
     [21. Entity]
 */
-.entity-title {
+.entity-titles {
   font-family: 'Oswald';
   font-weight: 500;
   color: rgb(255, 255, 255);
   line-height: 1.2;
 }
+
 .entity-subtitle {
   font-family: 'Oswald';
   font-weight: 400;
