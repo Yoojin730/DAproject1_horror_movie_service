@@ -40,119 +40,119 @@
             <img src="mountains_front.png" id="mountains_front">
             <div class="content">
         </section>
+        <button type="button" class="filter-button hashbtn" value="check" id="check"><span></span>#1</button>
+        <button type="button" class="filter-button hashbtn" value="check" id="check1" onclick = "hashtag2()"><span></span>#2</button>
+        <button type="button" class="filter-button hashbtn" value="check" id="check2"><span></span>#3</button>
         <div class="my-filters" id="hashtag">
-            <button data-filter-type="all" type="button" class="filter-button hashbtn highlight" id="hashbtn" onclick="colorchange()"><span></span>#All</button>
-            <button data-filter-type="fruit" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#여름</button>
-            <button data-filter-type="vegetables" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#스릴러</button>
-            <button data-filter-type="protein" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#반전</button>
-            <button data-filter-type="protein" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#잔인</button>
-            <button data-filter-type="protein" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#귀신</button><br>
+            <button type="button" class="filter-button hashbtn highlight" id="all"><span></span>#All</button>
+            <button type="button" class="filter-button hashbtn 1" id="reverse"><span></span>#반전</button>
+            <button type="button" class="filter-button hashbtn" id="summer"><span></span>#여름</button>
+            <button type="button" class="filter-button hashbtn" id="disaster"><span></span>#재난</button>
+            <button type="button" class="filter-button hashbtn" id="devil"><span></span>#악마</button>
+            <button type="button" class="filter-button hashbtn" id="ghost"><span></span>#귀신</button><br>
 
-            <button data-filter-type="all" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#한국</button>
-            <button data-filter-type="fruit" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#외국</button>
-            <button data-filter-type="all" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#악마</button>
-            <button data-filter-type="fruit" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#좀비</button>
-            <button data-filter-type="all" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#고어</button>
-            <button data-filter-type="fruit" type="button" class="filter-button hashbtn" id="hashbtn" onclick="colorchange()"><span></span>#오컬트</button>
-            
+            <button type="button" class="filter-button hashbtn" id="occult"><span></span>#오컬트</button>
+            <button type="button" class="filter-button hashbtn" id="zombie"><span></span>#좀비</button>
+            <button type="button" class="filter-button hashbtn" id="brutal"><span></span>#잔인</button>
+            <button type="button" class="filter-button hashbtn" id="thriller"><span></span>#스릴러</button>
+            <button type="button" class="filter-button hashbtn" id="gore"><span></span>#고어</button>
             <div class="my-filter-list">
-                <div class="filterable" data-filters='[ { "type":"fruit", "sortPriority":"3" }, { "type":"vegetables", "sortPriority":"3" } ]'>
-                  <a href="./47m.html"><img src="./images/movie_image/47m.jpg" alt></a>
-                </div>
-                <div class="filterable" data-filters='[ { "type":"fruit", "sortPriority":"1" } ]'>
-                  <img src="./images/movie_image/검은사제들.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"fruit", "sortPriority":"1" } ]'>
-                  <img src="./images/movie_image/겟아웃.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"fruit"} ]'>
-                  <img src="./images/movie_image/곡성.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"vegetables" } ]'>
-                  <img src="./images/movie_image/곤지암.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"vegetables" } ]'>
-                  <img src="./images/movie_image/그것.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"vegetables", "sortPriority":"1" }, { "type":"fruit", "sortPriority":"2" } ]'>
-                  <img src="./images/movie_image/기담.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"1" } ]'>
-                  <img src="./images/movie_image/더넌.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"3" } ]'>
-                  <img src="./images/movie_image/라이트아웃.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"2" } ]'>
-                  <img src="./images/movie_image/미드소마.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"2" } ]'>
-                  <img src="./images/movie_image/변신.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"2" } ]'>
-                  <img src="./images/movie_image/사바하.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"fruit", "sortPriority":"3" }, { "type":"vegetables", "sortPriority":"3" } ]'>
-                  <img src="./images/movie_image/사일런트힐.jpg" alt>
-                </div>
-                <div class="filterable" data-filters='[ { "type":"fruit", "sortPriority":"1" } ]'>
-                  <img src="./images/movie_image/새벽의저주.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"fruit"} ]'>
-                  <img src="./images/movie_image/샴.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"vegetables" } ]'>
-                  <img src="./images/movie_image/셔터.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"vegetables" } ]'>
-                  <img src="./images/movie_image/쏘우.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"vegetables", "sortPriority":"1" }, { "type":"fruit", "sortPriority":"2" } ]'>
-                  <img src="./images/movie_image/애나벨.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"1" } ]'>
-                  <img src="./images/movie_image/어스.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"3" } ]'>
-                  <img src="./images/movie_image/오큘러스.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"2" } ]'>
-                  <img src="./images/movie_image/오펀.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"2" } ]'>
-                  <img src="./images/movie_image/유전.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"2" } ]'>
-                  <img src="./images/movie_image/이스케이프룸.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"fruit", "sortPriority":"3" }, { "type":"vegetables", "sortPriority":"3" } ]'>
-                  <img src="./images/movie_image/인비저블맨.jpg" alt>
-                </div>
-                <div class="filterable" data-filters='[ { "type":"fruit", "sortPriority":"1" } ]'>
-                  <img src="./images/movie_image/인시디어스.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"fruit"} ]'>
-                  <img src="./images/movie_image/장화홍련.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"vegetables" } ]'>
-                  <img src="./images/movie_image/제인도.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"vegetables" } ]'>
-                  <img src="./images/movie_image/컨저링.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"vegetables", "sortPriority":"1" }, { "type":"fruit", "sortPriority":"2" } ]'>
-                  <img src="./images/movie_image/콰이어트플레이스2.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"1" } ]'>
-                  <img src="./images/movie_image/파라노말.jpg" alt="">
-                </div>
-                <div class="filterable" data-filters='[ { "type":"protein", "sortPriority":"3" } ]'>
-                  <img src="./images/movie_image/해피데스데이.jpg" alt="">
-                </div>
-            </div>
+              <div class="filterable">
+                <a class ="reverse summer disaster rs rd sd rsd" href="./hashtag_html/47m.html.html"><img src="./images/movie_image/47m.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="devil ghost occult deg deo go dego" href="./hashtag_html/검은사제들.html.html"><img src="./images/movie_image/검은사제들.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="devil zombie brutal dez deb zb dezb" href="./hashtag_html/곡성.html.html"><img src="./images/movie_image/곡성.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="reverse ghost zombie rg rz gz rgz" href="./hashtag_html/곤지암.html.html"><img src="./images/movie_image/곤지암.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="summer ghost brutal sg sb gb sgb" href="./hashtag_html/기담.html.html"><img src="./images/movie_image/기담.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="devil ghost zombie deg dez gz degz" href="./hashtag_html/더넌.html.html"><img src="./images/movie_image/더넌.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="reverse devil occult rde deo rde rdeo" href="./hashtag_html/변신.html.html"><img src="./images/movie_image/변신.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="zombie brutal gore zb zgo bgo zbgo" href="./hashtag_html/사일런트힐.html.html"><img src="./images/movie_image/사일런트힐.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="reverse ghost thriller rg rt gt rgt" id="ht" href="./hashtag_html/샴.html.html"><img src="./images/movie_image/샴.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class ="summer devil ghost sde sg deg sdeg" href="./hashtag_html/애나벨.html.html"><img src="./images/movie_image/애나벨.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="reverse brual thriller rb rt bt rbt" href="./hashtag_html/어스.html.html"><img src="./images/movie_image/어스.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="summer brutal thriller sb st bt sbt" href="./hashtag_html/오펀.html.html"><img src="./images/movie_image/오펀.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="ghost brutal thriller gb gt bt gbt" href="./hashtag_html/장화홍련.html.html"><img src="./images/movie_image/장화홍련.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="ghost brutal gore gb bgo gbo gbgo" href="./hashtag_html/제인도.html.html"><img src="./images/movie_image/제인도.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="ghost brutal thriller gb gt bt gbt" href="./hashtag_html/컨저링.html.html"><img src="./images/movie_image/컨저링.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="summer disaster thriller sd st dt sdt" href="./hashtag_html/콰이어트플레이스2.html.html"><img src="./images/movie_image/콰이어트플레이스2.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="reverse brutal thriller rb rt bt rbt" href="./hashtag_html/이스케이프룸.html.html"><img src="./images/movie_image/이스케이프룸.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="reverse ghost thriller rg rt gt rgt" id="ht" href="./hashtag_html/겟아웃.html.html"><img src="./images/movie_image/겟아웃.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class ="reverse brutal thriller rb rt bt rbt" href="./hashtag_html/해피데스데이.html.html"><img src="./images/movie_image/해피데스데이.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="reverse devil ghost rde rg deg rdeg" href="./hashtag_html/인시디어스.html.html"><img src="./images/movie_image/인시디어스.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="reverse ghost thriller rg rt gt rgt" href="./hashtag_html/인비저블맨.html.html"><img src="./images/movie_image/인비저블맨.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="ghost brutal thriller gb gt bt gbt" href="./hashtag_html/그것.html.html"><img src="./images/movie_image/그것.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="occult brutal gore ob ogo bgo obgo" href="./hashtag_html/미드소마.html.html"><img src="./images/movie_image/미드소마.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="reverse occult thriller ro rt ot rot" href="./hashtag_html/사바하.html.html"><img src="./images/movie_image/사바하.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="reverse zombie brutal rz rb zb rzb" href="./hashtag_html/새벽의저주.html.html"><img src="./images/movie_image/새벽의저주.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="reverse summer ghost rs rg sg rsg" href="./hashtag_html/셔터.html.html"><img src="./images/movie_image/셔터.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="reverse brutal thriller rb rt bt rbt" id="ht" href="./hashtag_html/쏘우.html.html"><img src="./images/movie_image/쏘우.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="devil ghost occult deg deo go dego" href="./hashtag_html/유전.html.html"><img src="./images/movie_image/유전.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="summer ghost brutal sg sb gb sgb" href="./hashtag_html/라이트아웃.html.html"><img src="./images/movie_image/라이트아웃.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="summer ghost thriller sg st gt sgt" href="./hashtag_html/오큘러스.html.html"><img src="./images/movie_image/오큘러스.jpg"></a>
+              </div>
+              <div class="filterable">
+                  <a class="reverse devil ghost rde rg deg rdeg" href="./hashtag_html/파라노말.html.html"><img src="./images/movie_image/파라노말.jpg"></a>
+              </div>
+          </div>
         </div>
         </div>
-
         <footer class="section-text-white footer footer-links bg-darken">
             <div class="footer-body container">
                 <div class="row">
@@ -312,18 +312,6 @@
                 })
             })
         </script>
-        <script>
-            // When the document is ready, bind the filter buttons
-            document.onreadystatechange = function() {
-              if (document.readyState === 'interactive') {
-                window._gauze.bindFilterButtons({
-                  triggerSelector: '.my-filters .filter-button',
-                  filterContainerSelector: '.my-filter-list'
-                })
-              }
-            }
-          </script>
-          <script src="./js/filter.js"></script>
-          <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="./js/filter_1.js"></script>
     </body>
 </html>
