@@ -8,9 +8,9 @@
   scroll-behavior: smooth;
 }
 
-body
+.sky
 {
-  background: linear-gradient(#2b1055,#7597de);
+  background: #2b1055;
 }
 .sky
 {
@@ -23,6 +23,7 @@ body
   justify-content: center;
   align-items: center;
 }
+
 header
 {
   position: absolute;
